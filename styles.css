@@ -1,0 +1,129 @@
+/* General Styles */
+body {
+  font-family: "Neue Helvetica", sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #000;
+}
+
+/* Header Styles */
+header {
+  background-color: #f5ac27;
+  padding: 20px;
+  text-align: center;
+}
+
+nav a {
+  color: #000;
+  text-decoration: none;
+  margin: 0 20px;
+  font-weight: bold;
+}
+
+/* Hero Section Styles */
+.hero {
+  height: 500px;
+  position: relative;
+}
+
+.hero-image {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-image: url("hero-image-1.jpg");
+  animation: heroAnimation 12s infinite;
+}
+
+@keyframes heroAnimation {
+  0% {
+    background-image: url("hero-image-1.jpg");
+  }
+  33% {
+    background-image: url("hero-image-2.jpg");
+  }
+  66% {
+    background-image: url("hero-image-3.jpg");
+  }
+  100% {
+    background-image: url("hero-image-1.jpg");
+  }
+}
+
+/* Column Styles */
+.columns {
+  display: flex;
+  justify-content: space-between;
+  margin: 50px;
+}
+
+.column {
+  width: 30%;
+  background-color: #ffd84b;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+.column:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.column-content {
+  text-align: center;
+}
+
+/* Color Scheme */
+.hero-image,
+.column {
+  background-color: #ffd84b;
+}
+
+header {
+  background-color: #f5ac27;
+}
+
+/* set up a time CSS */
+#name {
+  text-align: left;
+  margin-left: 37%;
+}
+label[for="name"] {
+  margin-left: 37%;
+}
+
+form {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+button[type="submit"] {
+  background-color: #f5ac27;
+  color: #000;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #ffd84b;
+}

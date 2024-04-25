@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Set up a time to Meet</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Neue+Helvetica&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="index.html" id="home-link">Home</a>
+        <a href="meet.html" id="meet-link">Set up a time to Meet</a>
+        <a href="about.html" id="about-link">About Me</a>
+      </nav>
+    </header>
+
+    <main>
+      <h1>Set up a time to Meet</h1>
+      <label for="name">Please enter your name here:</label>
+      <input type="text" id="name" name="name" required />
+      <form>
+        <label for="email">Email (ending with @byui.edu):</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          pattern=".*@byui.edu"
+          required
+        />
+
+        <label for="personal-info">What can I help you with? (Optional):</label>
+        <textarea id="personal-info" name="personal-info"></textarea>
+
+        <button type="submit">Submit</button>
+      </form>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
